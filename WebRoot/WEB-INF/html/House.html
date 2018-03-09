@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<style>
+.nurse{width:100%;}
+</style>
+<script src="js/jquery.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#h1").click(function(){
+    $("#content_right1").load("html/addHouse.html");
+  });
+});
+</script>
+
+<body>
+<div class="nurse">
+    	<h4 align="center">病房信息区</h4>&nbsp;&nbsp;&nbsp;
+   	<form action="" method="post">
+   		<input type="text" name="search"  placeholder="请输入病房编号" required><input type="submit"  value="搜索">&nbsp <input type="button" onclick="" value="添加" id="h1">
+   	</form>
+   	<table  border="1">
+    <tr>
+      <th>病房编号</th>
+      <th>病房床位数</th>
+      <th>病房空床位数</th>
+      <th>选项</th>
+  
+    </tr>
+    
+    
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a href="buy.jsp?mer_id=<%=mer_id%>">修改</a></td>
+      
+    </tr>
+</table>
+</div>
+<div class="content_right1" id="content_right1">
+
+</div>
+
+
+</body>
+</html>

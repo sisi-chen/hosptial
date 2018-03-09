@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC  
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"> 
+
+	<hibernate-configuration >
+   
+    <session-factory >
+        <mapping class="com.hospital.user.model.Doctor" />
+        <mapping class="com.hospital.user.model.User"  />
+        <mapping class="com.hospital.user.model.Message"  />
+        <mapping class="com.hospital.user.model.Case"  />
+        <mapping class="com.hospital.user.model.Patient"  />
+        <mapping class="com.hospital.user.model.Prescription"  />
+        <mapping class="com.hospital.user.model.Registration"  />
+        <mapping class="com.hospital.user.model.Staff" />
+        <mapping class="com.hospital.user.model.Nurse" />
+        <mapping class="com.hospital.user.model.Logistic" />
+        <mapping class="com.hospital.user.model.ConsumeByClass" />
+        <mapping class="com.hospital.user.model.Medicine" />
+        <mapping class="com.hospital.user.model.CheckIO" />
+    </session-factory>  
+    </hibernate-configuration>
+    
+

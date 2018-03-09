@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<style>
+	table{ width:400px; height:200px; position:absolute; top:50%; left:50%; margin-top:-150px; margin-left:-200px;}
+</style>
+<body>
+<form action="" method="post">
+<table border="1" cellspacing="1">
+	<tr> 
+    <td>流水账号：</td>
+    <td>挂号科室：</td>
+    <td>挂号所选医生：</td>
+    <td>挂号状态：</td>
+    <td>操作</td>
+    </tr>
+    
+   
+	<c:if test="${!empty Reglist }">
+				<c:forEach items="${Reglist}" var="reg">
+					<tr>
+						<td>${reg.aoName }</td>
+						<td>${reg.dNo }</td>
+						<td>${reg.rState }</td>
+						
+						<td>
+							
+						</td>
+					</tr>				
+				</c:forEach>
+			</c:if>
+    
+
+    </table>
+	</form>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<style type="text/css">
+.nurse{width:100%;height:30%;}
+.content_right1{height:70%;text-align:center;}
+</style>
+
+<script src="js/jquery.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#n1").click(function(){
+    $("#content_right1").load("html/addPatient.html");
+  });
+});
+</script>
+
+<body>
+<div class="nurse">
+    	<h4 align="center">患者信息区</h4>&nbsp;&nbsp;&nbsp;
+   	<form action="" method="post">
+   		<input type="text" name="search"  placeholder="请输入住院编号" required><input type="submit"  value="搜索">&nbsp <input type="button" onclick="" value="添加" id="n1">
+   	</form>
+   	<table  border="1">
+    <tr>
+      <th>住院编号</th>
+      <th>患者病房号</th>
+      <th>患者年龄</th>
+      <th>监护人</th>
+      <th>监护人联系方式</th>
+      <th>本人联系方式</th>
+      <th>病症</th>
+      <th>入院时间</th>
+      <th>出院时间</th>
+      
+      <th>选项</th>
+  
+    </tr>
+    
+    
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>  
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    
+      <td><a href="buy.jsp?mer_id=<%=mer_id%>">修改</a></td>
+      
+    </tr>
+</table>
+</div>
+<div class="content_right1" id="content_right1">
+
+</div>
+
+
+</body>
+</html>
